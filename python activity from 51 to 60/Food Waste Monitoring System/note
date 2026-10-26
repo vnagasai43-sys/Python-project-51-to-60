@@ -1,0 +1,42 @@
+
+PROGRAM 53: Food Waste Monitoring System
+
+AIM
+To calculate the total food waste recorded for different meals.
+
+FEATURES
+- Stores waste values for meals.
+- Calculates total waste.
+- Displays a waste summary.
+
+PROGRAM
+waste = {
+    "Breakfast": 2.5,
+    "Lunch": 4.0,
+    "Dinner": 3.0
+}
+
+total = sum(waste.values())
+
+for meal, kg in waste.items():
+    print(meal, "waste:", kg, "kg")
+
+print("Total waste:", total, "kg")
+
+EXPLANATION
+The dictionary stores waste for each meal. The sum() function adds the values and displays the total.
+
+SAMPLE INPUT / DATA
+Waste values are already given in the program.
+
+EXPECTED OUTPUT
+Breakfast waste: 2.5 kg
+Lunch waste: 4.0 kg
+Dinner waste: 3.0 kg
+Total waste: 9.5 kg
+
+ACTUAL OUTPUT
+Same as the expected output when the program is run with the sample input/data above.
+
+RESULT
+Thus, the total food waste is calculated successfully.

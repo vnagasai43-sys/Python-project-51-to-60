@@ -1,0 +1,40 @@
+
+PROGRAM 60: Manufacturing Quality Control Matrix
+
+AIM
+To count defective products in a quality-check matrix.
+
+FEATURES
+- Stores inspection results in a matrix.
+- Uses 1 to represent defective products.
+- Counts and displays total defects.
+
+PROGRAM
+# 1 means defective; 0 means good
+checks = [
+    [0, 1, 0],
+    [0, 0, 1],
+    [1, 0, 0]
+]
+
+defects = 0
+
+for row in checks:
+    defects += row.count(1)
+
+print("Total defective products:", defects)
+
+EXPLANATION
+The matrix stores inspection results. The program counts every 1, where 1 represents a defective product.
+
+SAMPLE INPUT / DATA
+Inspection values are already given in the program.
+
+EXPECTED OUTPUT
+Total defective products: 3
+
+ACTUAL OUTPUT
+Same as the expected output when the program is run with the sample input/data above.
+
+RESULT
+Thus, the number of defective products is counted successfully.

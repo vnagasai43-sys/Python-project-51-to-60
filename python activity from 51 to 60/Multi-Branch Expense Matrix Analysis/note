@@ -1,0 +1,44 @@
+
+PROGRAM 54: Multi-Branch Expense Matrix Analysis
+
+AIM
+To calculate the expenses of different branches.
+
+FEATURES
+- Stores expenses branch-wise.
+- Calculates each branch total.
+- Finds the overall expense.
+
+PROGRAM
+expenses = [
+    [1200, 800, 500],
+    [1000, 900, 600],
+    [1500, 700, 400]
+]
+
+grand_total = 0
+
+for i, branch in enumerate(expenses, start=1):
+    total = sum(branch)
+    print("Branch", i, "total:", total)
+    grand_total += total
+
+print("Overall expense:", grand_total)
+
+EXPLANATION
+The two-dimensional list stores expenses for each branch. The program adds each row and then calculates the grand total.
+
+SAMPLE INPUT / DATA
+Expense values are already given in the program.
+
+EXPECTED OUTPUT
+Branch 1 total: 2500
+Branch 2 total: 2500
+Branch 3 total: 2600
+Overall expense: 7600
+
+ACTUAL OUTPUT
+Same as the expected output when the program is run with the sample input/data above.
+
+RESULT
+Thus, branch-wise and overall expenses are calculated successfully.

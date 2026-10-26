@@ -1,0 +1,37 @@
+
+PROGRAM 52: Hackathon Team Formation and Ranking
+
+AIM
+To rank hackathon teams according to their scores.
+
+FEATURES
+- Stores team names and scores.
+- Sorts scores from highest to lowest.
+- Displays team rankings.
+
+PROGRAM
+teams = [("Team A", 85), ("Team B", 92), ("Team C", 78)]
+
+teams.sort(key=lambda team: team[1], reverse=True)
+
+print("Hackathon Rankings")
+for rank, team in enumerate(teams, start=1):
+    print(rank, team[0], "-", team[1])
+
+EXPLANATION
+Each team and score are stored together. The list is sorted by score in descending order and displayed with ranks.
+
+SAMPLE INPUT / DATA
+Team scores are already given in the program.
+
+EXPECTED OUTPUT
+Hackathon Rankings
+1 Team B - 92
+2 Team A - 85
+3 Team C - 78
+
+ACTUAL OUTPUT
+Same as the expected output when the program is run with the sample input/data above.
+
+RESULT
+Thus, teams are ranked according to their scores.

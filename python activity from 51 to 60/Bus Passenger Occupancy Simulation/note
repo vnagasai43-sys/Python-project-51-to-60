@@ -1,0 +1,42 @@
+PROGRAM 51: Bus Passenger Occupancy Simulation
+
+AIM
+To count passengers entering and leaving a bus.
+
+FEATURES
+- Tracks passengers getting on and off the bus.
+- Updates the passenger count.
+- Checks bus capacity.
+
+PROGRAM
+capacity = 40
+passengers = 0
+
+getting_on = int(input("Passengers getting on: "))
+getting_off = int(input("Passengers getting off: "))
+
+passengers = passengers + getting_on
+passengers = passengers - getting_off
+
+if passengers < 0:
+    print("Invalid passenger count")
+elif passengers > capacity:
+    print("Bus capacity exceeded")
+else:
+    print("Passengers in bus:", passengers)
+
+EXPLANATION
+The program reads the number of passengers getting on and off, updates the count, and checks the bus capacity.
+
+SAMPLE INPUT / DATA
+Passengers getting on: 12
+Passengers getting off: 5
+
+EXPECTED OUTPUT
+Passengers in bus: 7
+
+ACTUAL OUTPUT
+Same as the expected output when the program is run with the sample input/data above.
+
+RESULT
+Thus, the passenger count is calculated successfully.
