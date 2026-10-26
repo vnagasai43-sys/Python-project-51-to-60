@@ -1,4 +1,3 @@
-# Python-project-51-to-60
 PYTHON PROGRAMS 51–60
 =====================
 
